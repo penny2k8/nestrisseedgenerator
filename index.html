@@ -3,19 +3,21 @@
     <main>
         <head>
             <title>Seed Generator</title>
+            <script src="resources/rng-js/rng.js"></script>
             <link rel="stylesheet" type="text/css" href="resources/style.css">
             <link rel="stylesheet" type="text/css" href="resources/css/bootstrap.min.css">
         </head>
         <body>
             <div class = "container-fluid">
-                <div class = "col-md-12">NES Tetris Seed Generator</div>
+                <div class = "col-md-12 title">NES Tetris Seed Generator</div>
+                <div class = "col-md-12 desc">Used for Tetris Gym and HydrantDude's Fixed RNG Patch</div>
                 <p id="seed" class="seed">000000</p>
             <script>
             const d = new Date();
-            var rng = new RNG('6,492,500'*Math.round(Math.random())+d.getSeconds()) //Seed the RNG
+            var rng = new RNG('6,492,500'+d.getSeconds()) //Seed the RNG
             function gimme()
             {
-                var ameliaanddilet = rng.random(8192, 16777215); // 8192 = 002000| 16777215 = FFFFFF
+                var ameliaanddilet = rng.random(8192, 16777215); // 8192 = 002000 | 16777215 = FFFFFF
                 var seed = ameliaanddilet.toString(16); // Convert to Hex
                 seed = String(seed).padStart(6, "0"); // Add zeros at the start
                 document.getElementById("seed").innerHTML=seed.toUpperCase(); // Return seed
@@ -25,9 +27,9 @@
                     <button class = "btn btn-success btn-lg" onclick="gimme()">Generate</button>
                 </div>
                 <br>
-                <div>Find Tetris Gym Patch <a href="#">here</a></div>
-                <br>
-                <div>Find HydrantDude's Fixed RNG patch <a href="#">here</a></div>
+                <div><a href="https://github.com/kirjavascript/TetrisGYM/releases">Tetris Gym</a></div>
+                <div><a href="https://drive.google.com/drive/folders/1ACY0O2T0N4YEltUYZKkkMfQdzoL-iaPc">HydrantDude's Fixed RNG Patch</a></div>
+                <div><a href="https://www.romhacking.net/patch/">ROM Patcher JS</a></div>
             </div>
             </body>
     </main>

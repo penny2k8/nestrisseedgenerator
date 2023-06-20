@@ -21,12 +21,13 @@ div
     font-family: 'Alexandria', Arial, sans-serif;
     font-weight: normal;
     font-style: normal;
-    font-size: 40px;
+    font-size: 30px;
     text-align: center;
 }
-.Title
+.title
 {
-    font-size: 90px;
+    font-size: 60px;
+    font-weight: bold;
 }
 p
 {
@@ -41,5 +42,5 @@ p
 }
 .btn
 {
-    font-size: 40px;
+    font-size: 56px;
 }
