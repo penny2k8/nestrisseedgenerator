@@ -14,7 +14,7 @@
                 <p id="seed" class="seed">000000</p>
             <script>
             const d = new Date();
-            var rng = new RNG('6,492,500'+d.getSeconds()) //Seed the RNG
+            var rng = new RNG('6,492,500'+d.getTime()) //Seed the RNG
             function gimme()
             {
                 var ameliaanddilet = rng.random(8192, 16777215); // 8192 = 002000 | 16777215 = FFFFFF
@@ -30,6 +30,7 @@
                 <div><a href="https://github.com/kirjavascript/TetrisGYM/releases">Tetris Gym</a></div>
                 <div><a href="https://drive.google.com/drive/folders/1ACY0O2T0N4YEltUYZKkkMfQdzoL-iaPc">HydrantDude's Fixed RNG Patch</a></div>
                 <div><a href="https://www.romhacking.net/patch/">ROM Patcher JS</a></div>
+                <div><a href="https://github.com/penny2k8/nestrisseedgenerator">Source Code</a></div>
             </div>
             </body>
     </main>
