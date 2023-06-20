@@ -1,0 +1,45 @@
+@font-face {
+    font-family: 'Alexandria';
+    src: url('Alexandria-Regular.woff2') format('woff2'),
+        url('Alexandria-Regular.woff') format('woff'),
+        url('Alexandria-Regular.svg#Alexandria-Regular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+body
+{
+    font-family: 'Alexandria', Arial, sans-serif;
+    font-weight: normal;
+    font-style: normal;
+    font-size: 40px;
+    text-align: center;
+}
+div
+{
+    font-family: 'Alexandria', Arial, sans-serif;
+    font-weight: normal;
+    font-style: normal;
+    font-size: 40px;
+    text-align: center;
+}
+.Title
+{
+    font-size: 90px;
+}
+p
+{
+    height: 250px;       
+    text-align: center;
+    font-size:  200px;
+}
+.decimal
+{
+    font-size: 50px;
+    height: 60px;
+}
+.btn
+{
+    font-size: 40px;
+}
