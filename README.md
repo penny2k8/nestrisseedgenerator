@@ -42,9 +42,10 @@ Total number of "bad seeds" starting with `0000` or `0001`and ending with `01`, 
 Total number of "bad seeds" ending with `01`, `02`, or `03`: `196 608` <br>
 => Total number of "bad seeds" left: `196 602`<br>
 => Total number of "good seeds" left: `16 580 102` <br>
-There's still a great deal of "bad seeds" left, but with only about `1.17%` of the RNG rolling out a bad seed, this should not be a big deal<br>
+There are still a great deal of "bad seeds" left, but with only about `1.172%` of the RNG rolling out a bad seed, this should not be a big deal<br>
+For comparision, without the removal, the chance for a bad seed to appear is `1.175%`
 ### Future improvements
-Generate seed byte-by-byte, in order to eliminate all bad seeds, or reintroduce all bad seeds back.
+Generate seed byte-by-byte, in order to eliminate all bad seeds, or reintroduce all bad seeds back, if I think that's fine.
 ### Stuff used in the code.
 - [rng-js](https://github.com/skeeto/rng-js/tree/master) by [skeeto](https://github.com/skeeto)
 - [bootstrap](https://getbootstrap.com/)
