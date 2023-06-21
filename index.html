@@ -12,17 +12,7 @@
                 <div class = "col-md-12 title">NES Tetris Seed Generator</div>
                 <div class = "col-md-12 desc">Used for Tetris Gym and HydrantDude's Fixed RNG Patch</div>
                 <p id="seed" class="seed">000000</p>
-            <script>
-            const d = new Date();
-            var rng = new RNG('6,492,500'+d.getTime()) //Seed the RNG
-            function gimme()
-            {
-                var ameliaanddilet = rng.random(8192, 16777215); // 8192 = 002000 | 16777215 = FFFFFF
-                var seed = ameliaanddilet.toString(16); // Convert to Hex
-                seed = String(seed).padStart(6, "0"); // Add zeros at the start
-                document.getElementById("seed").innerHTML=seed.toUpperCase(); // Return seed
-            }    
-            </script> 
+            <script src="resources/code.js"></script> 
                 <div>
                     <button class = "btn btn-success btn-lg" onclick="gimme()">Generate</button>
                 </div>
